@@ -17,6 +17,7 @@ members = [
     "readnode-primitives",
     "rpc-server",
     "state-indexer",
+    "tx-details-storage",
     "tx-indexer",
 ]
 
@@ -38,6 +39,7 @@ configuration = { path = "configuration" }
 database = { path = "database" }
 readnode-primitives = { path = "readnode-primitives" }
 epoch-indexer = { path = "epoch-indexer" }
+tx-details-storage = { path = "tx-details-storage" }
 
 # Please, update the supported nearcore version in .cargo/config.toml file
 near-indexer = { git = 'https://github.com/kobayurii/nearcore.git', branch = "1.39.1-fork" }
@@ -50,7 +52,10 @@ near-crypto = { git = 'https://github.com/kobayurii/nearcore.git', branch = "1.3
 near-jsonrpc = { git = 'https://github.com/kobayurii/nearcore.git', branch = "1.39.1-fork" }
 near-parameters = { git = 'https://github.com/kobayurii/nearcore.git', branch = "1.39.1-fork" }
 near-vm-runner = { git = 'https://github.com/kobayurii/nearcore.git', branch = "1.39.1-fork", features = [
-    "wasmer0_vm", "wasmer2_vm", "near_vm", "wasmtime_vm"
+    "wasmer0_vm",
+    "wasmer2_vm",
+    "near_vm",
+    "wasmtime_vm",
 ] }
 
 near-lake-framework = { git = 'https://github.com/kobayurii/near-lake-framework-rs.git', branch = '0.7.13' }
