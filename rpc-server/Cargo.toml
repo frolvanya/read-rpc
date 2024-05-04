@@ -44,6 +44,7 @@ sysinfo = "0.30.5"
 configuration.workspace = true
 database.workspace = true
 readnode-primitives.workspace = true
+tx-details-storage.workspace = true
 
 near-chain-configs.workspace = true
 near-crypto.workspace = true
