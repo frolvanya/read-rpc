@@ -54,7 +54,8 @@ near-parameters.workspace = true
 near-vm-runner.workspace = true
 
 [features]
-default = ["send_tx_methods", "scylla_db"]
+#default = ["send_tx_methods", "scylla_db"]
+default = ["send_tx_methods", "postgres_db"]
 send_tx_methods = []
 tracing-instrumentation = ["configuration/tracing-instrumentation"]
 postgres_db = ["database/postgres_db"]

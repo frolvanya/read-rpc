@@ -19,7 +19,7 @@ $ diesel setup --database-url postgres://postgres:password@localhost/near_data
 
 ## Run migrations
 ```
-$ diesel migration redo --database-url postgres://postgres:password@localhost/near_data
+$ diesel migration run --database-url postgres://postgres:password@localhost/near_data
 ```
 
 ### psql
